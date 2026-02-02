@@ -34,7 +34,7 @@
     position: absolute;
     width: 60px;
     border-radius: 50%;
-    top: 1.5%;
+    top: 0.8%;
     left: calc(50% - 30px);
     animation-name: headerTopAnimationImage;
     animation-duration: 1s;
