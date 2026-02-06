@@ -71,7 +71,7 @@ var timelineBoxes = document.querySelector(".timelineBoxes");
 
 function revealTimelineBoxes() {
     const pos = timelineBoxes.getBoundingClientRect().top;
-    const screenPos = window.innerHeight * 0.90;
+    const screenPos = window.innerHeight * 0.95;
 
     if (pos < screenPos) {
         timelineBoxes.classList.add("show");
