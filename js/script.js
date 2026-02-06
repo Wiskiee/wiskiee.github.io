@@ -3,6 +3,9 @@ var icon3 = document.getElementById("icon-4")
 var headerImg = document.getElementById("headerImage")
 var desc1= document.getElementById("descPart1")
 var desc2= document.getElementById("descPart2")
+var timelineTitle = document.getElementById("timelineTitle");
+var timelineBox = document.querySelectorAll(".timelineBox");
+var timelineBoxes = document.querySelectorAll(".timelineBoxes");
 
 if(window.innerWidth>768){
     setInterval(icon1Sleep,1100);
@@ -39,3 +42,40 @@ function icon4Sleep2(){
     icon3.style.right="13%"
     icon3.style.color="#fff"
 }
+
+function revealTitle() {
+    const pos = timelineTitle.getBoundingClientRect().top;
+    const screenPos = window.innerHeight * 0.85;
+
+    if (pos < screenPos) {
+        timelineTitle.classList.add("show");
+    }
+}
+
+window.addEventListener("scroll", revealTitle);
+
+function revealtimelineBox() {
+    timelineBox.forEach(box => {
+        const pos = box.getBoundingClientRect().top;
+        const screenPos = window.innerHeight * 0.95;
+
+        if (pos < screenPos) {
+            box.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealtimelineBox);
+
+var timelineBoxes = document.querySelector(".timelineBoxes");
+
+function revealTimelineBoxes() {
+    const pos = timelineBoxes.getBoundingClientRect().top;
+    const screenPos = window.innerHeight * 0.85;
+
+    if (pos < screenPos) {
+        timelineBoxes.classList.add("show");
+    }
+}
+
+window.addEventListener("scroll", revealTimelineBoxes);
