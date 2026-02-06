@@ -95,7 +95,7 @@
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
     animation-name: titleFadeAnimation;
-    animation-duration: 5s;
+    animation-duration: 1.5s;
 }
 .mainPageContent p{
     font-size: 13px;
@@ -115,25 +115,49 @@
     animation-delay: 3s;
 }
 
-.footer{
+.secondPage{
     background-color: #000000;
 }
 
-.footerContent{
+.secondPageContent{
     color: #fff;
 }
 .contactContent a{
     color: #fff;
 }
-.contactContent a:hover{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 200ms;
+
+.timelineArea p{
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
 }
-.contactLine{
-    animation-name: contactLineAnimation;
-    animation-duration: 1s;
+
+.timelineBox p{
+    font-size: 20px;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+}
+.timelineBox{
+    background:#0f0f0f;
+  backdrop-filter: blur(6px);
+  border: 1px solid #222;
+    border-radius: 20px;
+    transition: all 0.8s ease;
+    animation-delay: 0;
+}
+.timelineBox:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+}
+.timelineBoxes{
+    border-left: 1px solid white;
+}
+.timelineNokta h1{
+    position: absolute;
+    left: -7.15%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    cursor: default;
 }
 @keyframes headerTopAnimationIcon1{
     0%{
@@ -212,15 +236,7 @@
     100%{
         color: #fff;
     }
-}
-@keyframes contactLineAnimation{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 100%;
-    }
-}
+} 
 
 
 @media(max-width:768px){
@@ -244,5 +260,14 @@
             color: #fff;
         }
     }
-
+    .timelineNokta h1{
+    position: absolute;
+    left: -11.5%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    cursor: default;
+    }
+    .timelineTitle{
+        margin-left: 15px;
+    }
 }
