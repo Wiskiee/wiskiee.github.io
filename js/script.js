@@ -45,7 +45,7 @@ function icon4Sleep2(){
 
 function revealTitle() {
     const pos = timelineTitle.getBoundingClientRect().top;
-    const screenPos = window.innerHeight * 0.85;
+    const screenPos = window.innerHeight * 0.75;
 
     if (pos < screenPos) {
         timelineTitle.classList.add("show");
@@ -71,7 +71,7 @@ var timelineBoxes = document.querySelector(".timelineBoxes");
 
 function revealTimelineBoxes() {
     const pos = timelineBoxes.getBoundingClientRect().top;
-    const screenPos = window.innerHeight * 0.85;
+    const screenPos = window.innerHeight * 0.90;
 
     if (pos < screenPos) {
         timelineBoxes.classList.add("show");
