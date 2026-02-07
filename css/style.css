@@ -80,46 +80,46 @@
     text-shadow: #fff;
     transition: 300ms;
 }
-.mainPage{
+.mainSection{
     background-color: #0f0f0f;
     height: calc(90vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mainPageContent{
+.mainSectionContent{
     color: #fff;
 }
-.mainPageContent h1{
+.mainSectionContent h1{
     font-size: 125px;
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
     animation-name: titleFadeAnimation;
     animation-duration: 1.5s;
 }
-.mainPageContent p{
+.mainSectionContent p{
     font-size: 13px;
     font-family: "Goldman", sans-serif;
     font-weight: 400;
 }
-.mainPageContent p #descPart1{
+.mainSectionContent p #descPart1{
     animation-name: descAnimation1;
     animation-duration: 1.5s;
     color: #0f0f0f;
     animation-delay: 3s;
 }
-.mainPageContent p #descPart2{
+.mainSectionContent p #descPart2{
     animation-name: descAnimation2;
     animation-duration: 1.5s;
     color: #0f0f0f;
     animation-delay: 3s;
 }
 
-.secondPage{
+.secondSection{
     background-color: #000000;
 }
 
-.secondPageContent{
+.secondSectionContent{
     color: #fff;
 }
 .contactContent a{
@@ -177,6 +177,48 @@
     transform: translate(-50%, -50%);
     color: #fff;
     cursor: default;
+}
+
+
+.talentsBox{
+  background:#0c0c0c;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:10px 24px 30px 24px;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.talentsBox.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.talentsBox h4{
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.talents{
+  background:#111;
+  border:1px solid #333;
+  border-radius:20px;
+  padding:10px;
+  text-align:center;
+  transition:.2s;
+  margin-top: 15px;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.talents.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.talents:hover{
+  border-color:#666;
+  transform:translateY(-2px);
 }
 @keyframes headerTopAnimationIcon1{
     0%{
