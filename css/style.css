@@ -331,4 +331,10 @@
     .timelineTitle{
         margin-left: 15px;
     }
+    .talentsArea{
+        margin-top: 30px;
+    }
+    .talentsBox{
+        padding:30px 24px 30px 24px;
+    }
 }
