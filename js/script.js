@@ -7,6 +7,7 @@ var timelineTitle = document.getElementById("timelineTitle");
 var timelineBox = document.querySelectorAll(".timelineBox");
 
 
+/*Hero Animasyon*/
 if(window.innerWidth>768){
     setInterval(icon1Sleep,1100);
     setInterval(icon4Sleep,1100);
@@ -43,6 +44,8 @@ function icon4Sleep2(){
     icon3.style.color="#fff"
 }
 
+
+/*Timeline Title Animasyon*/
 function revealTitle() {
     const pos = timelineTitle.getBoundingClientRect().top;
     const screenPos = window.innerHeight * 0.95;
@@ -54,6 +57,8 @@ function revealTitle() {
 
 window.addEventListener("scroll", revealTitle);
 
+
+/*Timeline Box Animasyon*/
 function revealtimelineBox() {
     timelineBox.forEach(box => {
         const pos = box.getBoundingClientRect().top;
@@ -67,6 +72,8 @@ function revealtimelineBox() {
 
 window.addEventListener("scroll", revealtimelineBox);
 
+
+/*Timeline Çizgi Animasyon*/
 var timelineBoxes = document.querySelector(".timelineBoxes");
 
 function revealTimelineBoxes() {
@@ -81,6 +88,7 @@ function revealTimelineBoxes() {
 window.addEventListener("scroll", revealTimelineBoxes);
 
 
+/*Talents Box Animasyon*/
 var talentsBox = document.querySelectorAll(".talentsBox");
 
 function revealtalentsBox() {
@@ -97,7 +105,7 @@ function revealtalentsBox() {
 window.addEventListener("scroll", revealtalentsBox);
 
 
-
+/*Talents Animasyon*/
 var talents = document.querySelectorAll(".talents");
 
 function revealtalents() {

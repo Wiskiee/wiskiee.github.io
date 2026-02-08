@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Header Başlangıç*/
 .headerTop{
     background-color:#000000 ;
     height: 80px;
@@ -80,6 +82,12 @@
     text-shadow: #fff;
     transition: 300ms;
 }
+/*Header Son*/
+
+
+
+
+/*Hero Başlangıç*/
 .mainSection{
     background-color: #0f0f0f;
     height: calc(90vh - 80px);
@@ -114,7 +122,12 @@
     color: #0f0f0f;
     animation-delay: 3s;
 }
+/*Hero Son*/
 
+
+
+
+/*Hakkımda Başlangıç*/
 .secondSection{
     background-color: #000000;
 }
@@ -220,6 +233,15 @@
   border-color:#666;
   transform:translateY(-2px);
 }
+/*Hakkımda Son*/
+
+
+/*Projeler Başlangıç*/
+
+/*Projeler Son*/
+
+
+/*Animasyonlar Başlangıç*/
 @keyframes headerTopAnimationIcon1{
     0%{
         left: 0%;
@@ -298,8 +320,10 @@
         color: #fff;
     }
 } 
+/*Animasyonlar Son*/
 
 
+/*Media Başlangıç*/
 @media(max-width:768px){
     @keyframes headerTopAnimationIcon4{
         0%{
@@ -338,3 +362,4 @@
         padding:30px 24px 30px 24px;
     }
 }
+/*Media Son*/
