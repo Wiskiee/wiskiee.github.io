@@ -185,7 +185,7 @@
 }
 .timelineNokta h1{
     position: absolute;
-    left: -7%;
+    left: -6.80%;
     bottom: 30%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -239,6 +239,143 @@
 /*Projeler Başlangıç*/
 
 /*Projeler Son*/
+
+/* Footer Başlangıç */
+
+.appFooter{
+background-color: #000;
+color: #fff;
+border-top: 1px solid #1a1a1a;
+padding: 90px 0 25px 0;
+}
+
+.footerContent{
+position: relative;
+}
+
+.footerTop{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+padding-bottom: 80px;
+}
+
+.footerBrand{
+max-width: 650px;
+}
+
+.footerSmallTitle{
+font-family: "Goldman", sans-serif;
+font-size: 12px;
+letter-spacing: 3px;
+color: #666;
+margin-bottom: 5px;
+}
+
+.footerBrand h2{
+font-family: "Bebas Neue", sans-serif;
+font-size: 130px;
+line-height: .8;
+margin: 0;
+letter-spacing: 2px;
+transition: .4s ease;
+}
+
+.footerBrand h2{
+letter-spacing: 8px;
+}
+
+.footerDescription{
+font-family: "Goldman", sans-serif;
+font-size: 12px;
+color: #666;
+margin-top: 25px;
+margin-bottom: 0;
+}
+
+.footerSocial{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 14px;
+}
+
+.footerSocial a{
+color: #777;
+text-decoration: none;
+font-family: "Goldman", sans-serif;
+font-size: 12px;
+display: flex;
+align-items: center;
+gap: 12px;
+transition: .3s ease;
+}
+
+.footerSocial a i{
+width: 20px;
+font-size: 16px;
+}
+
+.footerSocial a{
+color: #fff;
+transform: translateX(7px);
+text-decoration: none;
+}
+
+.footerBottom{
+border-top: 1px solid #1a1a1a;
+padding-top: 20px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+font-family: "Goldman", sans-serif;
+font-size: 10px;
+color: #444;
+
+}
+
+.footerBottom p{
+margin: 0;
+}
+
+.backToTop{
+color: #666;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 8px;
+transition: .3s ease;
+}
+
+.backToTop i{
+transition: .3s ease;
+}
+
+.backToTop{
+color: #fff;
+text-decoration: none;
+}
+
+.backToTop i{
+transform: translateY(-4px);
+}
+
+.footerReveal{
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.footerReveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer Son */
+
 
 
 /*Animasyonlar Başlangıç*/
@@ -346,14 +483,15 @@
         }
     }
     .timelineNokta h1{
-    position: absolute;
-    left: -11.25%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    cursor: default;
+        position: absolute;
+        left: -10.30%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        cursor: default;
     }
     .timelineTitle{
         margin-left: 15px;
+        margin-top:0px;
     }
     .talentsArea{
         margin-top: 30px;
@@ -361,5 +499,27 @@
     .talentsBox{
         padding:30px 24px 30px 24px;
     }
+    .appFooter{
+        padding: 65px 20px 20px 20px; 
+    } 
+    .footerTop{ 
+        flex-direction: column; align-items: flex-start; gap: 50px; padding-bottom: 60px; 
+    } 
+    .footerBrand h2{
+        font-size: 75px; 
+    } 
+    .footerBrand h2:hover{
+        letter-spacing: 4px; 
+    } 
+    .footerSocial{
+        gap: 18px; 
+    } 
+    .footerBottom{ 
+        flex-direction: column; align-items: flex-start; gap: 15px; 
+    } 
+    .backToTop{ 
+        order: -1; 
+    }
+
 }
 /*Media Son*/

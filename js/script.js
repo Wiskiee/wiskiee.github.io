@@ -6,117 +6,149 @@ var desc2= document.getElementById("descPart2")
 var timelineTitle = document.getElementById("timelineTitle");
 var timelineBox = document.querySelectorAll(".timelineBox");
 
-
-/*Hero Animasyon*/
+/Hero Animasyon/
 if(window.innerWidth>768){
-    setInterval(icon1Sleep,1100);
-    setInterval(icon4Sleep,1100);
+setInterval(icon1Sleep,1100);
+setInterval(icon4Sleep,1100);
 }else{
-    setInterval(icon1Sleep2,1100)
-    setInterval(icon4Sleep2,1100)
+setInterval(icon1Sleep2,1100)
+setInterval(icon4Sleep2,1100)
 }
 
 setInterval(sleepImage,2200)
 setInterval(sleepDesc,3000)
 
 function sleepDesc(){
-    desc1.style.color="#fff"
-    desc2.style.color="#fff"
+desc1.style.color="#fff"
+desc2.style.color="#fff"
 }
 
 function icon1Sleep(){
-    icon1.style.left="20%"
-    icon1.style.color="#fff"
+icon1.style.left="20%"
+icon1.style.color="#fff"
 }
 function icon4Sleep(){
-    icon3.style.right="20%"
-    icon3.style.color="#fff"
+icon3.style.right="20%"
+icon3.style.color="#fff"
 }
 function sleepImage(){
-    headerImg.style.opacity="100%"
+headerImg.style.opacity="100%"
 }
 function icon1Sleep2(){
-    icon1.style.left="13%"
-    icon1.style.color="#fff"
+icon1.style.left="13%"
+icon1.style.color="#fff"
 }
 function icon4Sleep2(){
-    icon3.style.right="13%"
-    icon3.style.color="#fff"
+icon3.style.right="13%"
+icon3.style.color="#fff"
 }
 
-
-/*Timeline Title Animasyon*/
+/Timeline Title Animasyon/
 function revealTitle() {
-    const pos = timelineTitle.getBoundingClientRect().top;
-    const screenPos = window.innerHeight * 0.95;
+const pos = timelineTitle.getBoundingClientRect().top;
+const screenPos = window.innerHeight * 0.95;
 
-    if (pos < screenPos) {
-        timelineTitle.classList.add("show");
-    }
+if (pos < screenPos) {
+    timelineTitle.classList.add("show");
+}
+
 }
 
 window.addEventListener("scroll", revealTitle);
 
-
-/*Timeline Box Animasyon*/
+/Timeline Box Animasyon/
 function revealtimelineBox() {
-    timelineBox.forEach(box => {
-        const pos = box.getBoundingClientRect().top;
-        const screenPos = window.innerHeight * 0.90;
+timelineBox.forEach(box => {
+const pos = box.getBoundingClientRect().top;
+const screenPos = window.innerHeight * 0.90;
 
-        if (pos < screenPos) {
-            box.classList.add("show");
-        }
-    });
+    if (pos < screenPos) {
+        box.classList.add("show");
+    }
+});
+
 }
 
 window.addEventListener("scroll", revealtimelineBox);
 
-
-/*Timeline Çizgi Animasyon*/
+/Timeline Çizgi Animasyon/
 var timelineBoxes = document.querySelector(".timelineBoxes");
 
 function revealTimelineBoxes() {
-    const pos = timelineBoxes.getBoundingClientRect().top;
-    const screenPos = window.innerHeight * 0.90;
+const pos = timelineBoxes.getBoundingClientRect().top;
+const screenPos = window.innerHeight * 0.90;
 
-    if (pos < screenPos) {
-        timelineBoxes.classList.add("show");
-    }
+if (pos < screenPos) {
+    timelineBoxes.classList.add("show");
+}
+
 }
 
 window.addEventListener("scroll", revealTimelineBoxes);
 
-
-/*Talents Box Animasyon*/
+/Talents Box Animasyon/
 var talentsBox = document.querySelectorAll(".talentsBox");
 
 function revealtalentsBox() {
-    talentsBox.forEach(box => {
-        const pos = box.getBoundingClientRect().top;
-        const screenPos = window.innerHeight * 0.85;
+talentsBox.forEach(box => {
+const pos = box.getBoundingClientRect().top;
+const screenPos = window.innerHeight * 0.85;
 
-        if (pos < screenPos) {
-            box.classList.add("show");
-        }
-    });
+    if (pos < screenPos) {
+        box.classList.add("show");
+    }
+});
+
 }
 
 window.addEventListener("scroll", revealtalentsBox);
 
-
-/*Talents Animasyon*/
+/Talents Animasyon/
 var talents = document.querySelectorAll(".talents");
 
 function revealtalents() {
-    talents.forEach(talent => {
-        const pos = talent.getBoundingClientRect().top;
-        const screenPos = window.innerHeight * 0.95;
+talents.forEach(talent => {
+const pos = talent.getBoundingClientRect().top;
+const screenPos = window.innerHeight * 0.95;
 
-        if (pos < screenPos) {
-            talent.classList.add("show");
-        }
-    });
+    if (pos < screenPos) {
+        talent.classList.add("show");
+    }
+});
+
 }
 
 window.addEventListener("scroll", revealtalents);
+
+/Footer Animasyon/
+var footerReveal = document.querySelectorAll(".footerReveal");
+
+function revealFooter() {
+footerReveal.forEach(element => {
+const pos = element.getBoundingClientRect().top;
+const screenPos = window.innerHeight * 0.90;
+
+    if (pos < screenPos) {
+        element.classList.add("show");
+    }
+});
+
+}
+
+window.addEventListener("scroll", revealFooter);
+
+/Footer - Başa Dön/
+
+var backToTop = document.querySelector(".backToTop");
+
+if (backToTop) {
+backToTop.addEventListener("click", function(e) {
+e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+}
